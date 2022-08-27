@@ -14,7 +14,7 @@ struct HoMM3_SwiftUIApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CategoriesList()
                 .environmentObject(mainCat)
         }
     }

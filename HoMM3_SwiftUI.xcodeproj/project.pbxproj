@@ -19,6 +19,7 @@
 		BF419A5E28BA3F7D0045B2BA /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF419A5D28BA3F7D0045B2BA /* CategoryRow.swift */; };
 		BF419A6028BA81430045B2BA /* TownsGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF419A5F28BA81430045B2BA /* TownsGrid.swift */; };
 		BF419A6228BA818F0045B2BA /* Towns.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF419A6128BA818F0045B2BA /* Towns.swift */; };
+		BF419A6428BA8AA30045B2BA /* TownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF419A6328BA8AA30045B2BA /* TownCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		BF419A5D28BA3F7D0045B2BA /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
 		BF419A5F28BA81430045B2BA /* TownsGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TownsGrid.swift; sourceTree = "<group>"; };
 		BF419A6128BA818F0045B2BA /* Towns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Towns.swift; sourceTree = "<group>"; };
+		BF419A6328BA8AA30045B2BA /* TownCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TownCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 				BF419A5A28BA3E160045B2BA /* CategoriesList.swift */,
 				BF419A5D28BA3F7D0045B2BA /* CategoryRow.swift */,
 				BF419A5F28BA81430045B2BA /* TownsGrid.swift */,
+				BF419A6328BA8AA30045B2BA /* TownCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF419A5928BA3B6F0045B2BA /* MainCategory.swift in Sources */,
+				BF419A6428BA8AA30045B2BA /* TownCell.swift in Sources */,
 				BF419A5B28BA3E160045B2BA /* CategoriesList.swift in Sources */,
 				BF419A5E28BA3F7D0045B2BA /* CategoryRow.swift in Sources */,
 				BF419A3028BA3B370045B2BA /* ContentView.swift in Sources */,

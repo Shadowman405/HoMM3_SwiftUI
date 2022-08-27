@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CategoriesList: View {
     @EnvironmentObject var mainCat: MainCategory
+    @EnvironmentObject var townGrid: TownGrid
     
     var body: some View {
         NavigationView {
@@ -20,6 +21,14 @@ struct CategoriesList: View {
                             .frame(width: 50, height: 50)
                         Text(category.name)
                             .font(.title2)
+                        
+                        if category == mainCat.categories[0] {
+                            NavigationLink {
+                                TownsGrid(townGrid: townGrid)
+                            } label: {
+                                Text("")
+                            }
+                        }
                     }
                     
                 }
@@ -33,5 +42,6 @@ struct CategoriesList_Previews: PreviewProvider {
     static var previews: some View {
         CategoriesList()
             .environmentObject(MainCategory())
+            .environmentObject(TownGrid())
     }
 }
