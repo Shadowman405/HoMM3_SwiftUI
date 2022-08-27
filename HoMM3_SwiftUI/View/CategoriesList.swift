@@ -21,8 +21,10 @@ struct CategoriesList: View {
                         Text(category.name)
                             .font(.title2)
                     }
+                    
                 }
             }
+            .navigationTitle("Main Categories")
         }
     }
 }
