@@ -8,10 +8,14 @@
 import SwiftUI
 
 @main
+
 struct HoMM3_SwiftUIApp: App {
+    @StateObject private var mainCat = MainCategory()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(mainCat)
         }
     }
 }
