@@ -15,7 +15,6 @@ struct TownsGrid: View {
     ]
     
     var body: some View {
-        NavigationView {
             ScrollView {
                 LazyVGrid(columns: columns) {
                     ForEach(townGrid.towns){ town in
@@ -25,7 +24,6 @@ struct TownsGrid: View {
             }
             .padding()
             .navigationTitle("Towns")
-        }
     }
 }
 
