@@ -17,6 +17,8 @@
 		BF419A5928BA3B6F0045B2BA /* MainCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF419A5828BA3B6F0045B2BA /* MainCategory.swift */; };
 		BF419A5B28BA3E160045B2BA /* CategoriesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF419A5A28BA3E160045B2BA /* CategoriesList.swift */; };
 		BF419A5E28BA3F7D0045B2BA /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF419A5D28BA3F7D0045B2BA /* CategoryRow.swift */; };
+		BF419A6028BA81430045B2BA /* TownsGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF419A5F28BA81430045B2BA /* TownsGrid.swift */; };
+		BF419A6228BA818F0045B2BA /* Towns.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF419A6128BA818F0045B2BA /* Towns.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		BF419A5828BA3B6F0045B2BA /* MainCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCategory.swift; sourceTree = "<group>"; };
 		BF419A5A28BA3E160045B2BA /* CategoriesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesList.swift; sourceTree = "<group>"; };
 		BF419A5D28BA3F7D0045B2BA /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
+		BF419A5F28BA81430045B2BA /* TownsGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TownsGrid.swift; sourceTree = "<group>"; };
+		BF419A6128BA818F0045B2BA /* Towns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Towns.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				BF419A5828BA3B6F0045B2BA /* MainCategory.swift */,
+				BF419A6128BA818F0045B2BA /* Towns.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -148,6 +153,7 @@
 				BF419A2F28BA3B370045B2BA /* ContentView.swift */,
 				BF419A5A28BA3E160045B2BA /* CategoriesList.swift */,
 				BF419A5D28BA3F7D0045B2BA /* CategoryRow.swift */,
+				BF419A5F28BA81430045B2BA /* TownsGrid.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -287,6 +293,8 @@
 				BF419A5E28BA3F7D0045B2BA /* CategoryRow.swift in Sources */,
 				BF419A3028BA3B370045B2BA /* ContentView.swift in Sources */,
 				BF419A2E28BA3B370045B2BA /* HoMM3_SwiftUIApp.swift in Sources */,
+				BF419A6228BA818F0045B2BA /* Towns.swift in Sources */,
+				BF419A6028BA81430045B2BA /* TownsGrid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
