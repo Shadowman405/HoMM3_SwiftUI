@@ -10,6 +10,8 @@ import SwiftUI
 
 final class MainCategory: ObservableObject {
     @Published var categories: [Category] = getAllCategories()
+    @Published var creatures: [Creature] = getAllCreature()
+
 }
 
 struct Category: Hashable, Codable, Identifiable {
@@ -17,6 +19,17 @@ struct Category: Hashable, Codable, Identifiable {
     var name: String
     
     var imageName: String
+}
+
+struct Creature: Hashable, Codable, Identifiable  {
+    var id: Int
+    var imgName: String
+    var name: String
+    var attack: String
+    var defence: String
+    var damage: String
+    var health: String
+    var speed: String
 }
 
 func getAllCategories() -> [Category] {
@@ -29,4 +42,13 @@ func getAllCategories() -> [Category] {
     ]
     
     return categories
+}
+
+func getAllCreature() -> [Creature] {
+    let creatures = [
+        Creature(id: 0, imgName: "pikeman", name: "Pikeman", attack: "4", defence: "5", damage: "1-3", health: "10", speed: "4"),
+        Creature(id: 1, imgName: "halberdier", name: "Halberdier", attack: "6", defence: "5", damage: "2-3", health: "10", speed: "5")
+    ]
+    
+    return creatures
 }
