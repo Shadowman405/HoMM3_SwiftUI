@@ -21,6 +21,7 @@
 		BF419A6228BA818F0045B2BA /* Towns.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF419A6128BA818F0045B2BA /* Towns.swift */; };
 		BF419A6428BA8AA30045B2BA /* TownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF419A6328BA8AA30045B2BA /* TownCell.swift */; };
 		BF419A6628BBA78F0045B2BA /* MainArt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF419A6528BBA78F0045B2BA /* MainArt.swift */; };
+		BF513DDD28BBAED100B748DE /* CreatureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF513DDC28BBAED100B748DE /* CreatureCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		BF419A6128BA818F0045B2BA /* Towns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Towns.swift; sourceTree = "<group>"; };
 		BF419A6328BA8AA30045B2BA /* TownCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TownCell.swift; sourceTree = "<group>"; };
 		BF419A6528BBA78F0045B2BA /* MainArt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainArt.swift; sourceTree = "<group>"; };
+		BF513DDC28BBAED100B748DE /* CreatureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 				BF419A5F28BA81430045B2BA /* TownsGrid.swift */,
 				BF419A6328BA8AA30045B2BA /* TownCell.swift */,
 				BF419A6528BBA78F0045B2BA /* MainArt.swift */,
+				BF513DDC28BBAED100B748DE /* CreatureCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				BF419A5B28BA3E160045B2BA /* CategoriesList.swift in Sources */,
 				BF419A5E28BA3F7D0045B2BA /* CategoryRow.swift in Sources */,
 				BF419A3028BA3B370045B2BA /* ContentView.swift in Sources */,
+				BF513DDD28BBAED100B748DE /* CreatureCell.swift in Sources */,
 				BF419A2E28BA3B370045B2BA /* HoMM3_SwiftUIApp.swift in Sources */,
 				BF419A6228BA818F0045B2BA /* Towns.swift in Sources */,
 				BF419A6028BA81430045B2BA /* TownsGrid.swift in Sources */,
