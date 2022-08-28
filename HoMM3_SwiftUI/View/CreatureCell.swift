@@ -13,7 +13,7 @@ struct CreatureCell: View {
     
     var body: some View {
         ZStack {
-            Color(.black)
+            Color(.brown)
             
             HStack {
                 Image(creature.imgName)
