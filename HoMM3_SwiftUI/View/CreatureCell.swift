@@ -9,30 +9,31 @@ import SwiftUI
 
 struct CreatureCell: View {
     @EnvironmentObject var mainCat: MainCategory
+    var creature: Creature
     
     var body: some View {
         ZStack {
             Color(.black)
             
             HStack {
-                Image(mainCat.creatures[1].imgName)
+                Image(creature.imgName)
                     .resizable()
                     .frame(width: 100,height: 170)
                 
                 VStack(alignment: .leading) {
-                    Text(mainCat.creatures[1].name)
+                    Text(creature.name)
                         .offset(x: 60, y: 0)
                         .foregroundColor(.white)
                     Divider()
-                    Text("Attack: \(mainCat.creatures[1].attack)")
+                    Text("Attack: \(creature.attack)")
                         .foregroundColor(.white)
-                    Text("Defence: \(mainCat.creatures[1].defence)")
+                    Text("Defence: \(creature.defence)")
                         .foregroundColor(.white)
-                    Text("Damage: \(mainCat.creatures[1].damage)")
+                    Text("Damage: \(creature.damage)")
                         .foregroundColor(.white)
-                    Text("Health: \(mainCat.creatures[1].health)")
+                    Text("Health: \(creature.health)")
                         .foregroundColor(.white)
-                    Text("Speed: \(mainCat.creatures[1].speed)")
+                    Text("Speed: \(creature.speed)")
                         .foregroundColor(.white)
                 }
             }
@@ -42,7 +43,9 @@ struct CreatureCell: View {
 
 struct CreatureCell_Previews: PreviewProvider {
     static var previews: some View {
-        CreatureCell()
+        let creatures = MainCategory().creatures
+        
+        CreatureCell(creature: creatures[0])
             .environmentObject(MainCategory())
     }
 }
