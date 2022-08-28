@@ -18,10 +18,11 @@ struct TownCell: View {
                     .resizable()
                     .clipShape(Rectangle())
                     .cornerRadius(30)
-                    .frame(height:300)
+                    .frame(height:220)
             }
             Text(town.name)
-                .font(.title)
+                .font(.custom("Snell Roundhand", size: 70))
+                .fontWeight(.thin)
                 .foregroundColor(.yellow)
         }
     }

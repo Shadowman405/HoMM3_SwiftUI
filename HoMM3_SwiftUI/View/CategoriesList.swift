@@ -13,27 +13,31 @@ struct CategoriesList: View {
     
     var body: some View {
         NavigationView {
-            List{
-                ForEach(mainCat.categories){ category in
-                    HStack {
-                        Image(category.imageName)
-                            .clipShape(Circle())
-                            .frame(width: 50, height: 50)
-                        Text(category.name)
-                            .font(.title2)
-                        
-                        if category == mainCat.categories[0] {
-                            NavigationLink {
-                                TownsGrid(townGrid: townGrid)
-                            } label: {
-                                Text("")
+            VStack {
+                MainArt()
+                
+                List{
+                    ForEach(mainCat.categories){ category in
+                        HStack {
+                            Image(category.imageName)
+                                .clipShape(Circle())
+                                .frame(width: 50, height: 50)
+                            Text(category.name)
+                                .font(.title2)
+                            
+                            if category == mainCat.categories[0] {
+                                NavigationLink {
+                                    TownsGrid(townGrid: townGrid)
+                                } label: {
+                                    Text("")
+                                }
                             }
                         }
+                        
                     }
-                    
                 }
+                .navigationTitle("Heroes 3 Wiki")
             }
-            .navigationTitle("Main Categories")
         }
     }
 }
