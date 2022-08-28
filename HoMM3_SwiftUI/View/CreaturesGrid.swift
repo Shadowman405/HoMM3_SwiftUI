@@ -19,6 +19,8 @@ struct CreaturesGrid: View {
             LazyVGrid(columns: columns){
                 ForEach(mainCat.creatures){ creature in
                     CreatureCell(creature: creature)
+                        .cornerRadius(30)
+                        .padding()
                 }
             }
         }

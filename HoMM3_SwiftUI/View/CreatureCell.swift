@@ -22,7 +22,7 @@ struct CreatureCell: View {
                 
                 VStack(alignment: .leading) {
                     Text(creature.name)
-                        .offset(x: 60, y: 0)
+                        .offset(x: 30, y: 0)
                         .foregroundColor(.white)
                     Divider()
                     Text("Attack: \(creature.attack)")
