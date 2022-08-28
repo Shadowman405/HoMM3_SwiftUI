@@ -31,6 +31,12 @@ struct CategoriesList: View {
                                 } label: {
                                     Text("")
                                 }
+                            } else if category == mainCat.categories[2] {
+                                NavigationLink {
+                                    CreaturesGrid(mainCat: _mainCat)
+                                } label: {
+                                    Text("")
+                                }
                             }
                         }
                         
