@@ -37,6 +37,12 @@ struct CategoriesList: View {
                                 } label: {
                                     Text("")
                                 }
+                            } else if category == mainCat.categories[1] {
+                                NavigationLink {
+                                    HeroesList(mainCat: _mainCat)
+                                } label: {
+                                    Text("")
+                                }
                             }
                         }
                         
