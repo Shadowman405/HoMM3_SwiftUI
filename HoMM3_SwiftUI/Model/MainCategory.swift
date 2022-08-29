@@ -11,7 +11,7 @@ import SwiftUI
 final class MainCategory: ObservableObject {
     @Published var categories: [Category] = getAllCategories()
     @Published var creatures: [Creature] = getAllCreature()
-
+    @Published var heroes: [Hero] = getAllHeroes()
 }
 
 struct Category: Hashable, Codable, Identifiable {
@@ -30,6 +30,17 @@ struct Creature: Hashable, Codable, Identifiable  {
     var damage: String
     var health: String
     var speed: String
+}
+
+struct Hero: Hashable, Codable, Identifiable {
+    var id: Int
+    var imageName: String
+    var name: String
+    var heroClass: String
+    var heroSpec: String
+    var heroFirstSkill: String
+    var heroSecondSkill: String?
+    var heroDescription: String
 }
 
 func getAllCategories() -> [Category] {
@@ -53,4 +64,13 @@ func getAllCreature() -> [Creature] {
     ]
     
     return creatures
+}
+
+func getAllHeroes() -> [Hero] {
+    let heroesArray = [
+        Hero(id: 0, imageName: "Hero_Christian", name: "Christian", heroClass: "Knight", heroSpec: "Ballista", heroFirstSkill: "Basic Leadership", heroSecondSkill: "Basic Artillery", heroDescription: "Christian goofy bebra"),
+        Hero(id: 1, imageName: "Hero_Edric", name: "Edric", heroClass: "Knight", heroSpec: "Griffins", heroFirstSkill: "Basic Leadership", heroSecondSkill: "Basic Armorer", heroDescription: "Edric bebra father")
+    ]
+    
+    return heroesArray
 }
