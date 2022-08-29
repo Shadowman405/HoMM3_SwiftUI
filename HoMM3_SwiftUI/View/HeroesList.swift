@@ -12,15 +12,24 @@ struct HeroesList: View {
     
     var body: some View {
             List{
+                //Text("Heroes")
                 ForEach(mainCat.heroes) { hero in
-                    HStack{
-                        Image(hero.imageName)
-                        Text(hero.name)
-                        
-                        Spacer()
-                        Text("Class: \(hero.heroClass)")
+                    ZStack {
+                        HStack{
+                            Image(hero.imageName)
+                            Text(hero.name)
+                            
+                            Spacer()
+                            Text("Class: \(hero.heroClass)")
+                                .offset(x: -20)
+                        }
+                        NavigationLink {
+                            HeroDetailView(hero: hero)
+                        } label: {
+                            Text("")
+                        }
                     }
-                }
+            }
         }
     }
 }

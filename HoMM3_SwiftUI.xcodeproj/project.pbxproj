@@ -24,6 +24,7 @@
 		BF513DDD28BBAED100B748DE /* CreatureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF513DDC28BBAED100B748DE /* CreatureCell.swift */; };
 		BF513DDF28BBBF4E00B748DE /* CreaturesGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF513DDE28BBBF4E00B748DE /* CreaturesGrid.swift */; };
 		BF513DE128BD397C00B748DE /* HeroesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF513DE028BD397C00B748DE /* HeroesList.swift */; };
+		BF513DE328BD3EEA00B748DE /* HeroDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF513DE228BD3EEA00B748DE /* HeroDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		BF513DDC28BBAED100B748DE /* CreatureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureCell.swift; sourceTree = "<group>"; };
 		BF513DDE28BBBF4E00B748DE /* CreaturesGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreaturesGrid.swift; sourceTree = "<group>"; };
 		BF513DE028BD397C00B748DE /* HeroesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesList.swift; sourceTree = "<group>"; };
+		BF513DE228BD3EEA00B748DE /* HeroDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 				BF513DDC28BBAED100B748DE /* CreatureCell.swift */,
 				BF513DDE28BBBF4E00B748DE /* CreaturesGrid.swift */,
 				BF513DE028BD397C00B748DE /* HeroesList.swift */,
+				BF513DE228BD3EEA00B748DE /* HeroDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				BF419A5E28BA3F7D0045B2BA /* CategoryRow.swift in Sources */,
 				BF419A3028BA3B370045B2BA /* ContentView.swift in Sources */,
 				BF513DDD28BBAED100B748DE /* CreatureCell.swift in Sources */,
+				BF513DE328BD3EEA00B748DE /* HeroDetailView.swift in Sources */,
 				BF419A2E28BA3B370045B2BA /* HoMM3_SwiftUIApp.swift in Sources */,
 				BF419A6228BA818F0045B2BA /* Towns.swift in Sources */,
 				BF419A6028BA81430045B2BA /* TownsGrid.swift in Sources */,
