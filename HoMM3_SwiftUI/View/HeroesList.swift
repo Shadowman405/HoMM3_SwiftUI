@@ -8,15 +8,19 @@
 import SwiftUI
 
 struct HeroesList: View {
-    
+    @EnvironmentObject var mainCat: MainCategory
     
     var body: some View {
-        ScrollView{
             List{
-                HStack{
-                    Image("Hero_Christian")
+                ForEach(mainCat.heroes) { hero in
+                    HStack{
+                        Image(hero.imageName)
+                        Text(hero.name)
+                        
+                        Spacer()
+                        Text("Class: \(hero.heroClass)")
+                    }
                 }
-            }
         }
     }
 }
@@ -24,5 +28,6 @@ struct HeroesList: View {
 struct HeroesList_Previews: PreviewProvider {
     static var previews: some View {
         HeroesList()
+            .environmentObject(MainCategory())
     }
 }
