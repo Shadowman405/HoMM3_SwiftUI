@@ -25,6 +25,7 @@
 		BF513DDF28BBBF4E00B748DE /* CreaturesGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF513DDE28BBBF4E00B748DE /* CreaturesGrid.swift */; };
 		BF513DE128BD397C00B748DE /* HeroesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF513DE028BD397C00B748DE /* HeroesList.swift */; };
 		BF513DE328BD3EEA00B748DE /* HeroDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF513DE228BD3EEA00B748DE /* HeroDetailView.swift */; };
+		BF513DE528BEA88B00B748DE /* SpellList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF513DE428BEA88B00B748DE /* SpellList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		BF513DDE28BBBF4E00B748DE /* CreaturesGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreaturesGrid.swift; sourceTree = "<group>"; };
 		BF513DE028BD397C00B748DE /* HeroesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesList.swift; sourceTree = "<group>"; };
 		BF513DE228BD3EEA00B748DE /* HeroDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailView.swift; sourceTree = "<group>"; };
+		BF513DE428BEA88B00B748DE /* SpellList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 				BF513DDE28BBBF4E00B748DE /* CreaturesGrid.swift */,
 				BF513DE028BD397C00B748DE /* HeroesList.swift */,
 				BF513DE228BD3EEA00B748DE /* HeroDetailView.swift */,
+				BF513DE428BEA88B00B748DE /* SpellList.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF513DE528BEA88B00B748DE /* SpellList.swift in Sources */,
 				BF419A6628BBA78F0045B2BA /* MainArt.swift in Sources */,
 				BF513DE128BD397C00B748DE /* HeroesList.swift in Sources */,
 				BF419A5928BA3B6F0045B2BA /* MainCategory.swift in Sources */,

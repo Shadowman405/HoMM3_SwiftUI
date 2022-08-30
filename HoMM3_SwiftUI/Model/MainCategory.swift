@@ -12,6 +12,7 @@ final class MainCategory: ObservableObject {
     @Published var categories: [Category] = getAllCategories()
     @Published var creatures: [Creature] = getAllCreature()
     @Published var heroes: [Hero] = getAllHeroes()
+    @Published var spells: [Spell] = getAllSpells()
 }
 
 struct Category: Hashable,Identifiable {
@@ -48,6 +49,7 @@ struct Spell: Hashable,Identifiable {
     var name: String
     var imageName: String
     var description: String
+    var spellLevel: Int
     var spellSchool: MagicSchool
 }
 
@@ -95,4 +97,16 @@ func getAllHeroes() -> [Hero] {
     ]
     
     return heroesArray
+}
+
+//MARK: - Magic
+
+func getAllSpells() -> [Spell] {
+    let spellsArray = [
+        Spell(id: 0, name: "BloodLust", imageName: "Bloodlust_small", description: "Increases the attack skill of target (or all) allied creature for melee attacks.",spellLevel: 1, spellSchool: .FireMagic),
+        Spell(id: 1, name: "Cure", imageName: "Cure_small", description: "Removes all negative spell effects from target (or all) allied troop and heals it for (10/20/30 + (power x 5)) health points.", spellLevel: 1, spellSchool: .WaterMagic),
+        Spell(id: 2, name: "Curse", imageName: "Curse_small", description: "The targeted (or all) enemy unit(s) deliver minimum or reduced damage when attacking.", spellLevel: 1, spellSchool: .FireMagic)
+    ]
+    
+    return spellsArray
 }
