@@ -39,7 +39,9 @@ struct HeroDetailView: View {
                         }
                         .padding()
                         VStack{
-                            
+                            Text("Information about \(hero.name): ")
+                                .font(.body)
+                            Text(hero.heroDescription)
                         }
                     }
                     Spacer()

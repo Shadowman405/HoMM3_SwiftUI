@@ -68,8 +68,8 @@ func getAllCreature() -> [Creature] {
 
 func getAllHeroes() -> [Hero] {
     let heroesArray = [
-        Hero(id: 0, imageName: "Hero_Christian", name: "Christian", heroClass: "Knight", heroSpec: "Ballista", heroFirstSkill: "Basic Leadership", heroSecondSkill: "Basic Artillery", heroDescription: "Christian goofy bebra"),
-        Hero(id: 1, imageName: "Hero_Edric", name: "Edric", heroClass: "Knight", heroSpec: "Griffins", heroFirstSkill: "Basic Leadership", heroSecondSkill: "Basic Armorer", heroDescription: "Edric bebra father")
+        Hero(id: 0, imageName: "Hero_Christian", name: "Christian", heroClass: "Knight", heroSpec: "Ballista", heroFirstSkill: "Basic Leadership", heroSecondSkill: "Basic Artillery", heroDescription: "Christian was always more of a frontiersman than a Knight, having set foot in nearly every part of Enroth before finally settling into military service in Erathia. Though a wanderer and a bit of a dreamer, his battlefield tactics are feared throughout the world."),
+        Hero(id: 1, imageName: "Hero_Edric", name: "Edric", heroClass: "Knight", heroSpec: "Griffins", heroFirstSkill: "Basic Leadership", heroSecondSkill: "Basic Armorer", heroDescription: "Edric's great grandfather was the first man in Erathia to domesticate and train a wild Griffin. Now, Edric's family maintains Erathia's largest Griffin breeding grounds for use in the King's armies.")
     ]
     
     return heroesArray
