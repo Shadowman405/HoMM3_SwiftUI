@@ -31,6 +31,7 @@ struct HeroesList: View {
                     }
             }
         }
+            .navigationTitle("Heroes")
     }
 }
 
