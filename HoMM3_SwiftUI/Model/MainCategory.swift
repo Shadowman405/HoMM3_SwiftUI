@@ -14,14 +14,14 @@ final class MainCategory: ObservableObject {
     @Published var heroes: [Hero] = getAllHeroes()
 }
 
-struct Category: Hashable, Codable, Identifiable {
+struct Category: Hashable,Identifiable {
     var id: Int
     var name: String
     
     var imageName: String
 }
 
-struct Creature: Hashable, Codable, Identifiable  {
+struct Creature: Hashable,Identifiable  {
     var id: Int
     var imgName: String
     var name: String
@@ -32,7 +32,7 @@ struct Creature: Hashable, Codable, Identifiable  {
     var speed: String
 }
 
-struct Hero: Hashable, Codable, Identifiable {
+struct Hero: Hashable,Identifiable {
     var id: Int
     var imageName: String
     var name: String
@@ -42,6 +42,24 @@ struct Hero: Hashable, Codable, Identifiable {
     var heroSecondSkill: String?
     var heroDescription: String
 }
+
+struct Spell: Hashable,Identifiable {
+    var id: Int
+    var name: String
+    var imageName: String
+    var description: String
+    var spellSchool: MagicSchool
+}
+
+enum MagicSchool {
+    case AllSchools
+    case AirMagic
+    case FireMagic
+    case WaterMagic
+    case EarthMagic
+}
+
+//MARK: - Categories
 
 func getAllCategories() -> [Category] {
     let categories = [
@@ -55,6 +73,8 @@ func getAllCategories() -> [Category] {
     return categories
 }
 
+//MARK: - Creatures
+
 func getAllCreature() -> [Creature] {
     let creatures = [
         Creature(id: 0, imgName: "pikeman", name: "Pikeman", attack: "4", defence: "5", damage: "1-3", health: "10", speed: "4"),
@@ -65,6 +85,8 @@ func getAllCreature() -> [Creature] {
     
     return creatures
 }
+
+//MARK: - Heroes
 
 func getAllHeroes() -> [Hero] {
     let heroesArray = [
