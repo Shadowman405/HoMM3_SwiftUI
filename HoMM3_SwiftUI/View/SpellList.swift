@@ -11,7 +11,17 @@ struct SpellList: View {
     @EnvironmentObject var mainCat: MainCategory
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List {
+            ForEach(mainCat.spells) { spell in
+                HStack {
+                    Image(spell.imageName)
+                        .frame(width: 60, height:50)
+                    Text(spell.name)
+                    Spacer()
+                    Text("   Spell Level :\(spell.spellLevel)")
+                }
+            }
+        }
     }
 }
 
