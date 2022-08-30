@@ -18,6 +18,7 @@ struct SpellDetailsView: View {
                 Text(spell.name)
             }
         }
+        .navigationTitle(spell.name)
     }
 }
 

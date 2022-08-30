@@ -13,15 +13,25 @@ struct SpellList: View {
     var body: some View {
         List {
             ForEach(mainCat.spells) { spell in
-                HStack {
-                    Image(spell.imageName)
-                        .frame(width: 60, height:50)
-                    Text(spell.name)
-                    Spacer()
-                    Text("   Spell Level :\(spell.spellLevel)")
+                ZStack {
+                    HStack {
+                        Image(spell.imageName)
+                            .frame(width: 60, height:50)
+                        Text(spell.name)
+                        Spacer()
+                        Text("   Spell Level :\(spell.spellLevel)")
+                            .offset(x: -20)
+                        
+                    }
+                    NavigationLink {
+                        SpellDetailsView(spell: spell)
+                    } label: {
+                        Text("")
+                    }
                 }
             }
         }
+        .navigationTitle("Spells")
     }
 }
 
