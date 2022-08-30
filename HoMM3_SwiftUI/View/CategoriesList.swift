@@ -43,6 +43,12 @@ struct CategoriesList: View {
                                 } label: {
                                     Text("")
                                 }
+                            } else if category == mainCat.categories[3] {
+                                NavigationLink {
+                                    SpellList(mainCat: _mainCat)
+                                } label: {
+                                    Text("")
+                                }
                             }
                         }
                         

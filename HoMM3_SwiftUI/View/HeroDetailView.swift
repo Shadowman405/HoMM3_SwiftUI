@@ -10,6 +10,7 @@ import SwiftUI
 struct HeroDetailView: View {
     @EnvironmentObject var mainCat: MainCategory
     var hero : Hero
+    
     var body: some View {
         ScrollView {
             VStack {
