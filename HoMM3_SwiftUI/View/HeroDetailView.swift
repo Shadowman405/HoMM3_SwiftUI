@@ -11,7 +11,7 @@ struct HeroDetailView: View {
     @EnvironmentObject var mainCat: MainCategory
     var hero : Hero
     var body: some View {
-        NavigationView {
+        ScrollView {
             VStack {
                 HStack {
                     Spacer()
@@ -25,14 +25,17 @@ struct HeroDetailView: View {
                     VStack(alignment: .leading) {
                         VStack(alignment: .leading) {
                             Text("Hero class: ")
+                                .font(.title2)
                             Text(" - " + hero.heroClass)
                             Text("Hero speciality: ")
+                                .font(.title2)
                             Text(" - " + hero.heroSpec)
                         }
                         .padding()
                         
                         VStack(alignment: .leading) {
                             Text("Hero skills: ")
+                                .font(.title2)
                             Text(" - " + hero.heroFirstSkill)
                             Text(" - " + (hero.heroSecondSkill ?? ""))
 
@@ -40,8 +43,10 @@ struct HeroDetailView: View {
                         .padding()
                         VStack{
                             Text("Information about \(hero.name): ")
-                                .font(.body)
+                                .font(.title2)
                             Text(hero.heroDescription)
+                                .font(.callout)
+                                .offset(x:5)
                         }
                     }
                     Spacer()
