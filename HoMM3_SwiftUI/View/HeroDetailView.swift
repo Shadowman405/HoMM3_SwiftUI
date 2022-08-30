@@ -11,19 +11,43 @@ struct HeroDetailView: View {
     @EnvironmentObject var mainCat: MainCategory
     var hero : Hero
     var body: some View {
-        ZStack {
-            HStack {
-                Image(hero.imageName)
-                    .resizable()
-                    .frame(width: 100, height: 100)
-                    .padding()
-                VStack {
-                    Text(hero.name)
+        NavigationView {
+            VStack {
+                HStack {
+                    Spacer()
+                    Image(hero.imageName)
+                        .resizable()
+                        .frame(width: 100, height: 100)
                         .padding()
-                    Text(hero.heroClass)
+                    Spacer()
                 }
+                HStack {
+                    VStack(alignment: .leading) {
+                        VStack(alignment: .leading) {
+                            Text("Hero class: ")
+                            Text(" - " + hero.heroClass)
+                            Text("Hero speciality: ")
+                            Text(" - " + hero.heroSpec)
+                        }
+                        .padding()
+                        
+                        VStack(alignment: .leading) {
+                            Text("Hero skills: ")
+                            Text(" - " + hero.heroFirstSkill)
+                            Text(" - " + (hero.heroSecondSkill ?? ""))
+
+                        }
+                        .padding()
+                        VStack{
+                            
+                        }
+                    }
+                    Spacer()
+                }
+
                 Spacer()
             }
+            .navigationTitle(hero.name)
         }
     }
 }
