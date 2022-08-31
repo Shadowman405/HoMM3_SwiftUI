@@ -12,13 +12,48 @@ struct SpellDetailsView: View {
     var spell : Spell
     
     var body: some View {
-        VStack {
-            HStack {
-                Image(spell.imageName)
-                Text(spell.name)
+        ScrollView {
+            VStack {
+                                    
+                VStack {
+                    Text(spell.name)
+                        .font(.title)
+                    Image(spell.imageName)
+                        .frame(width: 80 , height: 80)
+                    Spacer()
+                }
+                .padding()
+                
+                
+                HStack{
+                    VStack(alignment: .leading) {
+                        Text("Spell level: \(spell.spellLevel)")
+                            .padding()
+                        HStack{
+                        if spell.spellSchool == .WaterMagic {
+                            Text("Spell School: Water Magic").padding()
+                            Image("School_of_Water_Magic")
+                        } else if spell.spellSchool == .FireMagic {
+                            Text("Spell School").padding()
+                            Image("School_of_Fire_Magic")
+                        } else if spell.spellSchool == .AirMagic {
+                            Text("Spell School: Air Magic").padding()
+                            Image("School_of_Air_Magic")
+                        } else {
+                            Text("Spell School: Earth Magic").padding()
+                            Image("School_of_Earth_Magic")
+                            }
+                            
+                            
+                        }
+                        
+                        Text(spell.description)
+                            .padding()
+                    }
+                }
             }
+            .navigationTitle("Spell Information")
         }
-        .navigationTitle(spell.name)
     }
 }
 
