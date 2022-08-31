@@ -112,10 +112,12 @@ func getAllHeroes() -> [Hero] {
 
 func getAllSpells() -> [Spell] {
     let spellsArray = [
-        Spell(id: 0, name: "Bloodlust", imageName: "Bloodlust_small", description: "Increases the attack skill of target (or all) allied creature for melee attacks.",spellLevel: 1, spellSchool: .FireMagic),
-        Spell(id: 1, name: "Cure", imageName: "Cure_small", description: "Removes all negative spell effects from target (or all) allied troop and heals it for (10/20/30 + (power x 5)) health points.", spellLevel: 1, spellSchool: .WaterMagic),
-        Spell(id: 2, name: "Curse", imageName: "Curse_small", description: "The targeted (or all) enemy unit(s) deliver minimum or reduced damage when attacking.", spellLevel: 1, spellSchool: .FireMagic),
-        Spell(id: 3, name: "Dispel", imageName: "Dispel_small", description: "Removes all spell effects from target allied, enemy or all creatures and the battlefield.", spellLevel: 1, spellSchool: .WaterMagic)
+        Spell(id: 0, name: "Bloodlust", imageName: "Bloodlust", description: "Increases the attack skill of target (or all) allied creature for melee attacks.",spellLevel: 1, spellSchool: .FireMagic),
+        Spell(id: 1, name: "Cure", imageName: "Cure", description: "Removes all negative spell effects from target (or all) allied troop and heals it for (10/20/30 + (power x 5)) health points.", spellLevel: 1, spellSchool: .WaterMagic),
+        Spell(id: 2, name: "Curse", imageName: "Curse", description: "The targeted (or all) enemy unit(s) deliver minimum or reduced damage when attacking.", spellLevel: 1, spellSchool: .FireMagic),
+        Spell(id: 3, name: "Dispel", imageName: "Dispel", description: "Removes all spell effects from target allied, enemy or all creatures and the battlefield.", spellLevel: 1, spellSchool: .WaterMagic),
+        Spell(id: 4, name: "Bless", imageName: "Bless", description: "Target (or all) allied creature(s) inflict maximum damage (or maximum +1) when they attack.", spellLevel: 1, spellSchool: .WaterMagic),
+        Spell(id: 5, name: "Haste", imageName: "Haste", description: "Target (or all) allied troop's speed is increased by 3 (or 5) hexes per turn.", spellLevel: 1, spellSchool: .AirMagic)
     ]
     
     return spellsArray

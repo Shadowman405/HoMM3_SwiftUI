@@ -15,11 +15,9 @@ struct SpellDetailsView: View {
         ScrollView {
             VStack {
                                     
-                VStack {
-                    Text(spell.name)
-                        .font(.title)
+                HStack {
                     Image(spell.imageName)
-                        .frame(width: 80 , height: 80)
+                        .frame(width: 100 , height: 100)
                     Spacer()
                 }
                 .padding()
@@ -52,7 +50,7 @@ struct SpellDetailsView: View {
                     }
                 }
             }
-            .navigationTitle("Spell Information")
+            .navigationTitle(spell.name)
         }
     }
 }
