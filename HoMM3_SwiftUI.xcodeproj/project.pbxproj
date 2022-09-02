@@ -29,6 +29,7 @@
 		BF513DE728BEAAFE00B748DE /* SpellDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF513DE628BEAAFE00B748DE /* SpellDetailsView.swift */; };
 		BF513DE928C2767B00B748DE /* ArtifactsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF513DE828C2767B00B748DE /* ArtifactsList.swift */; };
 		BF513DEB28C2776100B748DE /* ArtifactDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF513DEA28C2776100B748DE /* ArtifactDetailsView.swift */; };
+		BF513DED28C286B600B748DE /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF513DEC28C286B500B748DE /* VideoPlayerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		BF513DE628BEAAFE00B748DE /* SpellDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellDetailsView.swift; sourceTree = "<group>"; };
 		BF513DE828C2767B00B748DE /* ArtifactsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactsList.swift; sourceTree = "<group>"; };
 		BF513DEA28C2776100B748DE /* ArtifactDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactDetailsView.swift; sourceTree = "<group>"; };
+		BF513DEC28C286B500B748DE /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +186,7 @@
 				BF513DE628BEAAFE00B748DE /* SpellDetailsView.swift */,
 				BF513DE828C2767B00B748DE /* ArtifactsList.swift */,
 				BF513DEA28C2776100B748DE /* ArtifactDetailsView.swift */,
+				BF513DEC28C286B500B748DE /* VideoPlayerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 				BF513DE128BD397C00B748DE /* HeroesList.swift in Sources */,
 				BF419A5928BA3B6F0045B2BA /* MainCategory.swift in Sources */,
 				BF419A6428BA8AA30045B2BA /* TownCell.swift in Sources */,
+				BF513DED28C286B600B748DE /* VideoPlayerView.swift in Sources */,
 				BF513DDF28BBBF4E00B748DE /* CreaturesGrid.swift in Sources */,
 				BF419A5B28BA3E160045B2BA /* CategoriesList.swift in Sources */,
 				BF419A5E28BA3F7D0045B2BA /* CategoryRow.swift in Sources */,
