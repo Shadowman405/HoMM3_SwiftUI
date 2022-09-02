@@ -27,6 +27,7 @@
 		BF513DE328BD3EEA00B748DE /* HeroDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF513DE228BD3EEA00B748DE /* HeroDetailView.swift */; };
 		BF513DE528BEA88B00B748DE /* SpellList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF513DE428BEA88B00B748DE /* SpellList.swift */; };
 		BF513DE728BEAAFE00B748DE /* SpellDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF513DE628BEAAFE00B748DE /* SpellDetailsView.swift */; };
+		BF513DE928C2767B00B748DE /* ArtifactsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF513DE828C2767B00B748DE /* ArtifactsList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		BF513DE228BD3EEA00B748DE /* HeroDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailView.swift; sourceTree = "<group>"; };
 		BF513DE428BEA88B00B748DE /* SpellList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellList.swift; sourceTree = "<group>"; };
 		BF513DE628BEAAFE00B748DE /* SpellDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellDetailsView.swift; sourceTree = "<group>"; };
+		BF513DE828C2767B00B748DE /* ArtifactsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactsList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 				BF513DE228BD3EEA00B748DE /* HeroDetailView.swift */,
 				BF513DE428BEA88B00B748DE /* SpellList.swift */,
 				BF513DE628BEAAFE00B748DE /* SpellDetailsView.swift */,
+				BF513DE828C2767B00B748DE /* ArtifactsList.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 				BF419A3028BA3B370045B2BA /* ContentView.swift in Sources */,
 				BF513DE728BEAAFE00B748DE /* SpellDetailsView.swift in Sources */,
 				BF513DDD28BBAED100B748DE /* CreatureCell.swift in Sources */,
+				BF513DE928C2767B00B748DE /* ArtifactsList.swift in Sources */,
 				BF513DE328BD3EEA00B748DE /* HeroDetailView.swift in Sources */,
 				BF419A2E28BA3B370045B2BA /* HoMM3_SwiftUIApp.swift in Sources */,
 				BF419A6228BA818F0045B2BA /* Towns.swift in Sources */,

@@ -13,6 +13,7 @@ final class MainCategory: ObservableObject {
     @Published var creatures: [Creature] = getAllCreature()
     @Published var heroes: [Hero] = getAllHeroes()
     @Published var spells: [Spell] = getAllSpells()
+    @Published var artifacts: [Artifact] = getAllArtifacts()
 }
 
 struct Category: Hashable,Identifiable {
