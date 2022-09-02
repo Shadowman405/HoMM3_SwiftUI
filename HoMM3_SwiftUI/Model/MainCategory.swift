@@ -44,6 +44,15 @@ struct Hero: Hashable,Identifiable {
     var heroDescription: String
 }
 
+struct Artifact: Hashable,Identifiable {
+    var id: Int
+    var name: String
+    var imageName: String
+    var slot: String
+    var effect: String
+    var description: String
+}
+
 struct Spell: Hashable,Identifiable {
     var id: Int
     var name: String
@@ -121,4 +130,16 @@ func getAllSpells() -> [Spell] {
     ]
     
     return spellsArray
+}
+
+
+// MARK: - Artifactes
+
+func getAllArtifacts() -> [Artifact] {
+    let artsArray = [
+        Artifact(id: 0, name: "Cape of Conjuring", imageName: "Artifact_Cape_of_Conjuring", slot: "Cape", effect: "Spell Duration +3", description: "Cape of Conjuring is a treasure class artifact, that is equipped in shoulders slot. When equipped, it increases the duration of hero's spells without fixed duration by 3."),
+        Artifact(id: 1, name: "Dragon Wing Tabard", imageName: "Artifact_Dragon_Wing_Tabard", slot: "Cape", effect: "Spell Power +2 \n Knowledge +2", description: "Dragon Wing Tabard is a minor class artifact, that is equipped in shoulders slot.Equipped in the cloak slot, this artifact gives you +2 to both Spell Power and Knowledge.")
+    ]
+    
+    return artsArray
 }
