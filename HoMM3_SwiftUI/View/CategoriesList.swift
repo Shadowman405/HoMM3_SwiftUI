@@ -16,6 +16,8 @@ struct CategoriesList: View {
             VStack {
                 //MainArt()
                 VideoPlayerView()
+                    .clipShape(Rectangle())
+                    .cornerRadius(10)
                 
                 List{
                     ForEach(mainCat.categories){ category in
