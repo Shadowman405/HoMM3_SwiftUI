@@ -20,6 +20,7 @@ struct ArtifactsList: View {
                 }
             }
         }
+        .navigationTitle("Artifacts")
     }
 }
 
