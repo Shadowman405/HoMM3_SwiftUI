@@ -49,6 +49,12 @@ struct CategoriesList: View {
                                 } label: {
                                     Text("")
                                 }
+                            } else if category == mainCat.categories[4] {
+                                NavigationLink {
+                                    ArtifactsList(mainCat: _mainCat)
+                                } label: {
+                                    Text("")
+                                }
                             }
                         }
                         
