@@ -13,13 +13,12 @@ struct ArtifactsList: View {
     var body: some View {
         List {
             ForEach(mainCat.artifacts){ artifact in
-                ZStack {
-                    HStack {
+                ZStack(alignment:.leading) {
+                    HStack{
                         Image(artifact.imageName)
                         Text(artifact.name)
                             .font(.title2)
                     }
-                    
                     NavigationLink {
                         ArtifactDetailsView(artifact: artifact)
                     } label: {

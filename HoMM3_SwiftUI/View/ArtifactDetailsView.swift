@@ -34,7 +34,7 @@ struct ArtifactDetailsView: View {
                     .font(.title2)
             }
         }
-        .navigationTitle("About " + artifact.name)
+        .navigationTitle("About Artifact")
     }
 }
 
