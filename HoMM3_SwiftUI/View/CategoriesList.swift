@@ -14,7 +14,8 @@ struct CategoriesList: View {
     var body: some View {
         NavigationView {
             VStack {
-                MainArt()
+                //MainArt()
+                VideoPlayerView()
                 
                 List{
                     ForEach(mainCat.categories){ category in

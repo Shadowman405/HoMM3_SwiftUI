@@ -10,7 +10,7 @@ import AVKit
 
 struct VideoPlayerView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VideoPlayer(player: AVPlayer(url: Bundle.main.url(forResource: "H3main_video", withExtension: "mp4")!))
     }
 }
 
