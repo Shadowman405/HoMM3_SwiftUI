@@ -11,6 +11,7 @@ struct CategoriesList: View {
     @EnvironmentObject var mainCat: MainCategory
     @EnvironmentObject var townGrid: TownGrid
     
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -18,6 +19,7 @@ struct CategoriesList: View {
                 VideoPlayerView()
                     .clipShape(Rectangle())
                     .cornerRadius(10)
+                    .padding()
                 
                 List{
                     ForEach(mainCat.categories){ category in

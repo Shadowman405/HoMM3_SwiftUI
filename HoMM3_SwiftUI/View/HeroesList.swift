@@ -10,10 +10,12 @@ import SwiftUI
 struct HeroesList: View {
     @EnvironmentObject var mainCat: MainCategory
     
+    @State private var searchText = ""
+    
     var body: some View {
             List{
                 //Text("Heroes")
-                ForEach(mainCat.heroes) { hero in
+                ForEach(searchResults) { hero in
                     ZStack {
                         HStack{
                             Image(hero.imageName)
@@ -32,6 +34,15 @@ struct HeroesList: View {
             }
         }
             .navigationTitle("Heroes")
+            .searchable(text: $searchText)
+    }
+    
+    var searchResults: [Hero] {
+        if searchText.isEmpty {
+            return mainCat.heroes
+        } else {
+            return mainCat.heroes.filter { $0.name.contains(searchText) }
+        }
     }
 }
 
