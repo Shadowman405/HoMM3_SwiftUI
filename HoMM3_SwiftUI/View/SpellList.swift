@@ -12,7 +12,7 @@ struct SpellList: View {
     
     @State private var selectedSchool = MagicSchool.AllSchools
     
-    var schools = [MagicSchool.FireMagic , MagicSchool.AirMagic, MagicSchool.WaterMagic , MagicSchool.EarthMagic, MagicSchool.AllSchools]
+    var schools = [MagicSchool.AllSchools, MagicSchool.AirMagic , MagicSchool.EarthMagic, MagicSchool.FireMagic , MagicSchool.WaterMagic]
     
     var body: some View {
         Text("Select Magic School")
