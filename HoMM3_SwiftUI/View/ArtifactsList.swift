@@ -10,9 +10,11 @@ import SwiftUI
 struct ArtifactsList: View {
     @EnvironmentObject var mainCat: MainCategory
     
+    @State private var searchText = ""
+    
     var body: some View {
         List {
-            ForEach(mainCat.artifacts){ artifact in
+            ForEach(searchResults){ artifact in
                 ZStack(alignment:.leading) {
                     HStack{
                         Image(artifact.imageName)
@@ -28,7 +30,17 @@ struct ArtifactsList: View {
             }
         }
         .navigationTitle("Artifacts")
+        .searchable(text: $searchText)
     }
+    
+    var searchResults: [Artifact] {
+        if searchText.isEmpty {
+            return mainCat.artifacts
+        } else {
+            return mainCat.artifacts.filter { $0.name.contains(searchText) }
+        }
+    }
+
 }
 
 struct ArtifactsList_Previews: PreviewProvider {
