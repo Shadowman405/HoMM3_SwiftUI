@@ -63,7 +63,19 @@ struct SpellList: View {
         } else if selectedSchool == .WaterMagic{
             return mainCat.spells.filter {
                 $0.spellSchool == .WaterMagic
-        }
+            }
+        } else if selectedSchool == .AirMagic{
+            return mainCat.spells.filter {
+                $0.spellSchool == .AirMagic
+            }
+        } else if selectedSchool == .EarthMagic {
+            return mainCat.spells.filter {
+                $0.spellSchool == .EarthMagic
+            }
+        } else if selectedSchool == .AllSchools {
+            return mainCat.spells.filter {
+                $0.spellSchool == .AllSchools
+            }
         } else {
             return mainCat.spells
         }
