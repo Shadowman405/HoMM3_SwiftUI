@@ -10,7 +10,17 @@ import SwiftUI
 struct SpellList: View {
     @EnvironmentObject var mainCat: MainCategory
     
+    @State private var selectedSchool = MagicSchool.FireMagic
+    var schools = ["Air Magic", "Water Magic", "Earth Magic", "Fire Magic", "All schools"]
+    
     var body: some View {
+        Picker("Choose Magic School", selection: $selectedSchool) {
+            ForEach(schools, id: \.self){
+                Text($0)
+            }
+        }
+        //.pickerStyle(SegmentedPickerStyle())
+        
         List {
             ForEach(mainCat.spells) { spell in
                 ZStack {
