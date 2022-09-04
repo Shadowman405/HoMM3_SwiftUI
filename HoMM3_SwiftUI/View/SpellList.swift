@@ -11,18 +11,29 @@ struct SpellList: View {
     @EnvironmentObject var mainCat: MainCategory
     
     @State private var selectedSchool = MagicSchool.FireMagic
-    var schools = ["Air Magic", "Water Magic", "Earth Magic", "Fire Magic", "All schools"]
+    
+    var schools = [MagicSchool.FireMagic , MagicSchool.AirMagic, MagicSchool.WaterMagic , MagicSchool.EarthMagic, MagicSchool.AllSchools]
     
     var body: some View {
         Picker("Choose Magic School", selection: $selectedSchool) {
-            ForEach(schools, id: \.self){
-                Text($0)
+            ForEach(schools, id: \.self){ school in
+                if school == .EarthMagic{
+                    Text("Earth magic")
+                } else if school == .AirMagic {
+                    Text("Air Magic")
+                } else if school == .WaterMagic {
+                    Text("Water Magic")
+                } else if school == .FireMagic {
+                    Text("Fire Magic")
+                } else {
+                    Text("All Schools")
+                }
             }
         }
         //.pickerStyle(SegmentedPickerStyle())
         
         List {
-            ForEach(mainCat.spells) { spell in
+            ForEach(searchResults) { spell in
                 ZStack {
                     HStack {
                         Image(spell.imageName)
@@ -42,6 +53,20 @@ struct SpellList: View {
             }
         }
         .navigationTitle("Spells")
+    }
+    
+    var searchResults: [Spell] {
+        if selectedSchool == .FireMagic {
+            return mainCat.spells.filter{
+                $0.spellSchool == .FireMagic
+            }
+        } else if selectedSchool == .WaterMagic{
+            return mainCat.spells.filter {
+                $0.spellSchool == .WaterMagic
+        }
+        } else {
+            return mainCat.spells
+        }
     }
 }
 
