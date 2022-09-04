@@ -10,11 +10,13 @@ import SwiftUI
 struct SpellList: View {
     @EnvironmentObject var mainCat: MainCategory
     
-    @State private var selectedSchool = MagicSchool.FireMagic
+    @State private var selectedSchool = MagicSchool.AllSchools
     
     var schools = [MagicSchool.FireMagic , MagicSchool.AirMagic, MagicSchool.WaterMagic , MagicSchool.EarthMagic, MagicSchool.AllSchools]
     
     var body: some View {
+        Text("Select Magic School")
+            .font(.title3)
         Picker("Choose Magic School", selection: $selectedSchool) {
             ForEach(schools, id: \.self){ school in
                 if school == .EarthMagic{
@@ -30,7 +32,7 @@ struct SpellList: View {
                 }
             }
         }
-        //.pickerStyle(SegmentedPickerStyle())
+        //.pickerStyle(Menu())
         
         List {
             ForEach(searchResults) { spell in
@@ -73,9 +75,11 @@ struct SpellList: View {
                 $0.spellSchool == .EarthMagic
             }
         } else if selectedSchool == .AllSchools {
-            return mainCat.spells.filter {
-                $0.spellSchool == .AllSchools
-            }
+            return mainCat.spells
+
+//            return mainCat.spells.filter {
+//                $0.spellSchool == .AllSchools
+//            }
         } else {
             return mainCat.spells
         }
