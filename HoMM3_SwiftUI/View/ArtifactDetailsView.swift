@@ -12,29 +12,33 @@ struct ArtifactDetailsView: View {
     var artifact : Artifact
     
     var body: some View {
-        VStack {
-            HStack {
-                Image(artifact.imageName)
-                Text(artifact.name)
+        ZStack {
+            AnimatedBack()
+            
+            VStack {
+                HStack {
+                    Image(artifact.imageName)
+                    Text(artifact.name)
+                        .font(.title)
+                }
+                HStack{
+                    VStack(alignment: .leading) {
+                        Text("Slot: " + artifact.slot)
+                            .font(.title2)
+                        Text("Effect: " + artifact.effect)
+                            .font(.title2)
+                    }
+                }
+                .padding()
+                Text("Artifact Info:")
                     .font(.title)
-            }
-            HStack{
-                VStack(alignment: .leading) {
-                    Text("Slot: " + artifact.slot)
-                        .font(.title2)
-                    Text("Effect: " + artifact.effect)
+                HStack{
+                    Text(artifact.description)
                         .font(.title2)
                 }
             }
-            .padding()
-            Text("Artifact Info:")
-                .font(.title)
-            HStack{
-                Text(artifact.description)
-                    .font(.title2)
-            }
+            .navigationTitle("About Artifact")
         }
-        .navigationTitle("About Artifact")
     }
 }
 

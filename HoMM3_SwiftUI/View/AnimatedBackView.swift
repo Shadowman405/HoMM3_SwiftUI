@@ -20,7 +20,7 @@ struct AnimatedBack: View {
     @State var end = UnitPoint(x: 4, y: 0)
     
     let timer = Timer.publish(every: 1, on: .main, in: .default).autoconnect()
-    let colors = [Color.blue , Color.red, Color.purple, Color.pink, Color.yellow, Color.green, Color.orange]
+    let colors = [Color.red, Color.purple, Color.indigo, Color.yellow, Color.orange]
     
     var body: some View {
         LinearGradient(gradient: Gradient(colors: colors), startPoint: start, endPoint: end)
