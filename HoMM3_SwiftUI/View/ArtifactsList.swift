@@ -17,7 +17,18 @@ struct ArtifactsList: View {
             ForEach(searchResults){ artifact in
                 ZStack(alignment:.leading) {
                     HStack{
-                        Image(artifact.imageName)
+                        ZStack {
+                            Circle().foregroundColor(.indigo)
+
+                            
+                            Image(artifact.imageName)
+                                .clipShape(Circle().stroke(lineWidth: 80))
+                            .shadow(color: .orange, radius: 10)
+                        }
+                        .frame(width: 50, height: 50)
+                        
+                        
+                        
                         Text(artifact.name)
                             .font(.title2)
                     }
