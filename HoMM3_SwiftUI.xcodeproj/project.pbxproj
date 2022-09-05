@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF277DB328C67746007D1D55 /* AnimatedBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF277DB228C67746007D1D55 /* AnimatedBackView.swift */; };
 		BF419A2E28BA3B370045B2BA /* HoMM3_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF419A2D28BA3B370045B2BA /* HoMM3_SwiftUIApp.swift */; };
 		BF419A3028BA3B370045B2BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF419A2F28BA3B370045B2BA /* ContentView.swift */; };
 		BF419A3228BA3B390045B2BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF419A3128BA3B390045B2BA /* Assets.xcassets */; };
@@ -51,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF277DB228C67746007D1D55 /* AnimatedBackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedBackView.swift; sourceTree = "<group>"; };
 		BF419A2A28BA3B370045B2BA /* HoMM3_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HoMM3_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF419A2D28BA3B370045B2BA /* HoMM3_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoMM3_SwiftUIApp.swift; sourceTree = "<group>"; };
 		BF419A2F28BA3B370045B2BA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 				BF513DE828C2767B00B748DE /* ArtifactsList.swift */,
 				BF513DEA28C2776100B748DE /* ArtifactDetailsView.swift */,
 				BF513DEC28C286B500B748DE /* VideoPlayerView.swift */,
+				BF277DB228C67746007D1D55 /* AnimatedBackView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 				BF513DE328BD3EEA00B748DE /* HeroDetailView.swift in Sources */,
 				BF419A2E28BA3B370045B2BA /* HoMM3_SwiftUIApp.swift in Sources */,
 				BF419A6228BA818F0045B2BA /* Towns.swift in Sources */,
+				BF277DB328C67746007D1D55 /* AnimatedBackView.swift in Sources */,
 				BF419A6028BA81430045B2BA /* TownsGrid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
