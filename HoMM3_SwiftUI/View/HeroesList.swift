@@ -19,6 +19,8 @@ struct HeroesList: View {
                     ZStack {
                         HStack{
                             Image(hero.imageName)
+                                .clipShape(Circle())
+                                .shadow(color: .orange, radius: 10)
                             Text(hero.name)
                             
                             Spacer()
