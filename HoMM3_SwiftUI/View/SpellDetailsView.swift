@@ -12,45 +12,49 @@ struct SpellDetailsView: View {
     var spell : Spell
     
     var body: some View {
-        ScrollView {
-            VStack {
-                                    
-                HStack {
-                    Image(spell.imageName)
-                        .frame(width: 100 , height: 100)
-                    Spacer()
-                }
-                .padding()
-                
-                
-                HStack{
-                    VStack(alignment: .leading) {
-                        Text("Spell level: \(spell.spellLevel)")
-                            .padding()
-                        HStack{
-                        if spell.spellSchool == .WaterMagic {
-                            Text("Spell School: Water Magic").padding()
-                            Image("School_of_Water_Magic")
-                        } else if spell.spellSchool == .FireMagic {
-                            Text("Spell School").padding()
-                            Image("School_of_Fire_Magic")
-                        } else if spell.spellSchool == .AirMagic {
-                            Text("Spell School: Air Magic").padding()
-                            Image("School_of_Air_Magic")
-                        } else {
-                            Text("Spell School: Earth Magic").padding()
-                            Image("School_of_Earth_Magic")
+        ZStack {
+            AnimatedBack()
+            
+            ScrollView {
+                VStack {
+                                        
+                    HStack {
+                        Image(spell.imageName)
+                            .frame(width: 100 , height: 100)
+                        Spacer()
+                    }
+                    .padding()
+                    
+                    
+                    HStack{
+                        VStack(alignment: .leading) {
+                            Text("Spell level: \(spell.spellLevel)")
+                                .padding()
+                            HStack{
+                            if spell.spellSchool == .WaterMagic {
+                                Text("Spell School: Water Magic").padding()
+                                Image("School_of_Water_Magic")
+                            } else if spell.spellSchool == .FireMagic {
+                                Text("Spell School").padding()
+                                Image("School_of_Fire_Magic")
+                            } else if spell.spellSchool == .AirMagic {
+                                Text("Spell School: Air Magic").padding()
+                                Image("School_of_Air_Magic")
+                            } else {
+                                Text("Spell School: Earth Magic").padding()
+                                Image("School_of_Earth_Magic")
+                                }
+                                
+                                
                             }
                             
-                            
+                            Text(spell.description)
+                                .padding()
                         }
-                        
-                        Text(spell.description)
-                            .padding()
                     }
                 }
+                .navigationTitle(spell.name)
             }
-            .navigationTitle(spell.name)
         }
     }
 }
