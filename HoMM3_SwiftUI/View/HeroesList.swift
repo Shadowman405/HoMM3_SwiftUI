@@ -34,6 +34,7 @@ struct HeroesList: View {
                         }
                     }
             }
+                //.listRowBackground(Color.blue)
         }
             .navigationTitle("Heroes")
             .searchable(text: $searchText)
